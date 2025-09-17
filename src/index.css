@@ -53,6 +53,7 @@ All colors MUST be HSL.
     --shadow-soft: 0 2px 8px -2px hsl(142 76% 36% / 0.1);
     --shadow-medium: 0 4px 16px -4px hsl(142 76% 36% / 0.15);
     --shadow-strong: 0 8px 32px -8px hsl(142 76% 36% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 36% / 0.3);
 
     --radius: 0.75rem;
 
