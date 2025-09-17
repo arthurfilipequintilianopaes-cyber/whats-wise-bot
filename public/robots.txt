@@ -12,3 +12,19 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://whatsapp-rag-bot.lovable.app/sitemap.xml
+
+# SEO optimization
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow specific paths
+Allow: /auth
+Allow: /
+
+# Crawl-delay for bots
+Crawl-delay: 1

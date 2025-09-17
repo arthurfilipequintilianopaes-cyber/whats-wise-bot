@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# WhatsApp RAG Bot - Sistema de Atendimento Inteligente
 
-## Project info
+Um dashboard profissional para gerenciar seu chatbot RAG (Retrieval-Augmented Generation) integrado ao WhatsApp, utilizando OpenAI para respostas inteligentes.
 
-**URL**: https://lovable.dev/projects/253d405d-4c2f-4905-91d7-56f9cffe48dd
+## 🚀 Funcionalidades
 
-## How can I edit this code?
+### 📊 Dashboard Completo
+- **Métricas em tempo real**: Acompanhe conversas, respostas automáticas e transferências
+- **Atividade recente**: Monitor de todas as interações do chatbot
+- **Status do sistema**: Verificação de conectividade das APIs (OpenAI, WhatsApp)
+- **Indicadores de desempenho**: Tempo de resposta e taxa de sucesso
 
-There are several ways of editing your application.
+### 💬 Simulador de Chat
+- **Interface WhatsApp-like**: Teste seu chatbot em ambiente similar ao real
+- **Respostas simuladas**: Veja como o bot responde a diferentes perguntas
+- **Indicador de digitação**: Experiência realista de conversa
+- **Chat limpo**: Reinicie facilmente para novos testes
 
-**Use Lovable**
+### 📚 Base de Conhecimento
+- **Gerenciamento de documentos**: Organize informações que alimentam o RAG
+- **Busca avançada**: Encontre rapidamente documentos por título ou conteúdo
+- **Filtros por categoria**: Organize por políticas, tutoriais, FAQ, etc.
+- **Estatísticas de uso**: Veja quais documentos são mais consultados
+- **Status de documentos**: Controle entre ativos, rascunhos e arquivados
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/253d405d-4c2f-4905-91d7-56f9cffe48dd) and start prompting.
+### 🔐 Sistema de Autenticação
+- **Login seguro**: Integração com Supabase Auth
+- **Proteção de rotas**: Acesso apenas para usuários autenticados
+- **Persistência de sessão**: Mantenha-se logado entre sessões
+- **Interface de login/registro**: Design moderno e responsivo
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologias Utilizadas
 
-**Use your preferred IDE**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Build Tool**: Vite
+- **Backend**: Supabase (Auth + Database)
+- **Roteamento**: React Router DOM
+- **Estado**: React Query para cache e sincronização
+- **Icons**: Lucide React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design System
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+O projeto utiliza um design system completo baseado no WhatsApp:
+- **Cores primárias**: Verde WhatsApp (#25D366)
+- **Gradientes**: Integração harmoniosa com a identidade visual
+- **Modo escuro**: Suporte completo com alternância automática
+- **Componentes**: Baseados no shadcn/ui com customizações
+- **Responsivo**: Interface adaptável para todos os dispositivos
 
-Follow these steps:
+## 📱 Responsividade
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Mobile-first**: Interface otimizada para dispositivos móveis
+- **Breakpoints**: Adaptação para tablet e desktop
+- **Touch-friendly**: Botões e elementos com tamanho adequado
+- **Performance**: Carregamento rápido em todas as plataformas
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Deploy
 
-# Step 3: Install the necessary dependencies.
-npm i
+Este projeto está pronto para deploy na Lovable ou qualquer plataforma que suporte aplicações React:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. **Lovable**: Use o botão "Publish" no editor
+2. **Vercel/Netlify**: Conecte seu repositório e faça deploy automático
+3. **Docker**: Containerização disponível para deploy customizado
 
-**Edit a file directly in GitHub**
+## 📊 Métricas e Monitoramento
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+O sistema inclui métricas essenciais:
+- **Conversas diárias**: Acompanhe o volume de atendimentos
+- **Taxa de automação**: Percentual de respostas automáticas vs. transferências
+- **Tempo de resposta**: Performance do sistema RAG
+- **Base de conhecimento**: Utilização e eficácia dos documentos
 
-**Use GitHub Codespaces**
+## 🔗 Integrações
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Supabase
+- Autenticação de usuários
+- Armazenamento de dados
+- Políticas de segurança (RLS)
+- Edge Functions para lógica customizada
 
-## What technologies are used for this project?
+### APIs Externas (Preparado para)
+- **OpenAI API**: Processamento de linguagem natural
+- **WhatsApp Business API**: Integração com mensagens
+- **Webhooks**: Recebimento de mensagens em tempo real
 
-This project is built with:
+## 📝 Próximos Passos
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Para conectar com APIs reais:
+1. Configure as credenciais da OpenAI no Supabase
+2. Implemente webhooks para WhatsApp Business API
+3. Conecte a base de conhecimento com sistema de embeddings
+4. Configure monitoramento e alertas
 
-## How can I deploy this project?
+## 💡 Como Usar
 
-Simply open [Lovable](https://lovable.dev/projects/253d405d-4c2f-4905-91d7-56f9cffe48dd) and click on Share -> Publish.
+1. **Login**: Faça login com suas credenciais
+2. **Dashboard**: Visualize métricas e atividades
+3. **Chat Simulator**: Teste respostas do chatbot
+4. **Knowledge Base**: Gerencie documentos e informações
+5. **Deploy**: Publique quando estiver pronto
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+**Desenvolvido com ❤️ usando Lovable**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Sistema completo e profissional para gerenciamento de chatbots RAG no WhatsApp.
